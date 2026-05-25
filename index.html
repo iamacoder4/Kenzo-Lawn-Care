@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenzo Lawn Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter',sans-serif;
+    }
+
+    body{
+      background:#0d1117;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      text-align:center;
+      padding:40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.65)),
+        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .logo{
+      font-size:4rem;
+      font-weight:800;
+      color:#5cff7a;
+      text-shadow:0 0 25px rgba(92,255,122,0.5);
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      font-size:1.2rem;
+      color:#d0d0d0;
+      max-width:700px;
+      line-height:1.7;
+    }
+
+    .location{
+      margin-top:18px;
+      color:#8cff9e;
+      font-weight:600;
+    }
+
+    .buttons{
+      margin-top:35px;
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .btn{
+      padding:16px 34px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.25s;
+      font-size:1rem;
+    }
+
+    .primary{
+      background:#5cff7a;
+      color:black;
+      box-shadow:0 0 25px rgba(92,255,122,0.35);
+    }
+
+    .primary:hover{
+      transform:translateY(-4px) scale(1.03);
+    }
+
+    .secondary{
+      border:2px solid rgba(255,255,255,0.2);
+      color:white;
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,0.05);
+    }
+
+    .secondary:hover{
+      background:rgba(255,255,255,0.1);
+      transform:translateY(-4px);
+    }
+
+    .section{
+      padding:90px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .section-title{
+      font-size:2.7rem;
+      text-align:center;
+      margin-bottom:18px;
+      font-weight:800;
+    }
+
+    .section-text{
+      text-align:center;
+      color:#b6b6b6;
+      max-width:750px;
+      margin:auto;
+      line-height:1.8;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:24px;
+      margin-top:50px;
+    }
+
+    .card{
+      background:#151b23;
+      border:1px solid rgba(255,255,255,0.08);
+      padding:30px;
+      border-radius:24px;
+      transition:0.25s;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+      border-color:#5cff7a;
+      box-shadow:0 0 30px rgba(92,255,122,0.15);
+    }
+
+    .card h3{
+      margin-bottom:12px;
+      font-size:1.3rem;
+    }
+
+    .card p{
+      color:#b6b6b6;
+      line-height:1.7;
+    }
+
+    .contact-box{
+      margin-top:60px;
+      text-align:center;
+      background:#151b23;
+      padding:50px 20px;
+      border-radius:28px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .contact-box h2{
+      font-size:2.2rem;
+      margin-bottom:12px;
+    }
+
+    .footer{
+      text-align:center;
+      padding:30px;
+      color:#8f8f8f;
+      border-top:1px solid rgba(255,255,255,0.08);
+      margin-top:60px;
+    }
+
+    @media(max-width:700px){
+      .logo{
+        font-size:2.8rem;
+      }
+
+      .subtitle{
+        font-size:1rem;
+      }
+
+      .section-title{
+        font-size:2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="logo">Kenzo Lawn Care</div>
+
+    <p class="subtitle">
+      Reliable neighborhood lawn mowing and yard cleanup services.
+      Fast scheduling, clean work, and affordable prices.
+    </p>
+
+    <div class="location">
+      Serving Waukee & Des Moines Areas Only
+    </div>
+
+    <div class="buttons">
+      <a href="https://tally.so/r/VL4dKM" class="btn primary">Book Appointment</a>
+      <a href="#services" class="btn secondary">View Services</a>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2 class="section-title">Services</h2>
+
+    <p class="section-text">
+      Professional lawn care focused on clean results, reliability, and fast service.
+    </p>
+
+    <div class="services">
+      <div class="card">
+        <h3>Lawn Mowing</h3>
+        <p>
+          Clean and professional mowing for small, medium, and large yards.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Weed Trimming</h3>
+        <p>
+          Edge sidewalks, fences, and hard-to-reach areas for a sharp finished look.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Yard Cleanup</h3>
+        <p>
+          Leaf cleanup, small debris removal, and quick outdoor cleanup services.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <h2>Ready To Book?</h2>
+
+      <p class="section-text">
+        Schedule your lawn service using the booking form below.
+        Payment is collected in person after the job is completed.
+      </p>
+
+      <div class="buttons" style="margin-top:30px;">
+        <a href="https://tally.so/r/VL4dKM" class="btn primary">Open Booking Form</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2026 Kenzo Lawn Care • Waukee & Des Moines
+  </div>
+
+</body>
+</html>
